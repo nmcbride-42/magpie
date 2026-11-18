@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magpie-tess"
+version = "0.1.0"
+description = "Tiered TESS light-curve funnel: mechanical anomaly filters, catalog vetoes, hostile LLM judges, period resolution and VSX submission packets."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nick McBride" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "astropy>=6.0",
+    "matplotlib>=3.8",
+    "lightkurve>=2.4",
+    "astroquery>=0.4.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["magpie"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: needs internet access (MAST/Kepler archives)"]

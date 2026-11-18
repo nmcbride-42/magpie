@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Pipeline output: sweep DB, bulk scripts, caches, plots, dossiers, packets, logs
+data/
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.fits

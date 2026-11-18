@@ -1,0 +1,9 @@
+# Runtime dependencies (mirrors pyproject.toml). Tested with Python 3.12,
+# numpy 2.4, scipy 1.17, astropy 7.2, matplotlib 3.10, lightkurve 2.6,
+# astroquery 0.4.11.
+numpy>=1.26
+scipy>=1.11
+astropy>=6.0
+matplotlib>=3.8
+lightkurve>=2.4
+astroquery>=0.4.7
